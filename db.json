@@ -184,6 +184,12 @@
       "email": "pavel@mail.ru",
       "password": "123456",
       "id": "f6pd2n8lcxv6c2y"
+    },
+    {
+      "name": "Максим",
+      "email": "maxim@mail.ru",
+      "password": "123456",
+      "id": "f6pd5solcz7ilxa"
     }
   ],
   "accounts": [
@@ -222,6 +228,11 @@
       "name": "Накопления",
       "user_id": "f6pd2n8lcxv6c2y",
       "id": "f6pdg4lcxv6p0e"
+    },
+    {
+      "name": "Зарплата",
+      "user_id": "f6pd5solcz7ilxa",
+      "id": "f6pd4d8lcz7iz9z"
     }
   ],
   "transactions": [
@@ -370,15 +381,6 @@
       "created_at": "2023-01-15T21:03:39.970Z"
     },
     {
-      "id": "f6pd17wlcxv7pcs",
-      "type": "income",
-      "name": "Сэкономил на ЖКХ",
-      "sum": 3000,
-      "account_id": "f6pdg4lcxv6p0e",
-      "user_id": "f6pd2n8lcxv6c2y",
-      "created_at": "2023-01-15T21:04:05.403Z"
-    },
-    {
       "id": "f6pd3wslcxv82sd",
       "type": "expense",
       "name": "Микроволновка",
@@ -386,6 +388,15 @@
       "account_id": "f6pdg4lcxv6p0e",
       "user_id": "f6pd2n8lcxv6c2y",
       "created_at": "2023-01-15T21:04:22.812Z"
+    },
+    {
+      "id": "f6pd3k4lcz7j97l",
+      "type": "income",
+      "name": "Премия",
+      "sum": 720000,
+      "account_id": "f6pd4d8lcz7iz9z",
+      "user_id": "f6pd5solcz7ilxa",
+      "created_at": "2023-01-16T19:36:45.920Z"
     }
   ]
 }

@@ -13,7 +13,10 @@ class AsyncForm {
    * через registerEvents()
    * */
   constructor(element) {    
-    if (!element) throw new Error('Element not found');
+    if (!element) {
+      throw new Error('Элемент не найден');
+    }
+    
     this.element = element;
     this.registerEvents();
   }
@@ -43,10 +46,11 @@ class AsyncForm {
     for (let entry of formData.entries()) {
       convertData[entry[0]] = entry[1];
     }
+
     return convertData;
   }
 
-  onSubmit(options){
+  onSubmit(options) {
 
   }
 

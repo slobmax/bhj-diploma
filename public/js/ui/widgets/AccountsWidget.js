@@ -14,7 +14,10 @@ class AccountsWidget {
    * необходимо выкинуть ошибку.
    * */
   constructor(element) {    
-    if(!element) throw new Error('Елемент не найден');
+    if(!element) {
+      throw new Error('Элемент не найден');
+    }
+    
     this.element = element;
     this.registerEvents();
     this.update();
@@ -73,7 +76,9 @@ class AccountsWidget {
    * Вызывает App.showPage( 'transactions', { account_id: id_счёта });
    * */
   onSelectAccount(element) {
-    if(!element) return;
+    if(!element) {
+      return;
+    }
 
     for (let item of document.querySelectorAll('.account')) {
       item.classList.remove('active');

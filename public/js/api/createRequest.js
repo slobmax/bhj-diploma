@@ -25,11 +25,8 @@ const createRequest = (options = {}) => {
   };  
 
   xhr.onload = () => {
-    let response;
-    let error;
-    xhr.status !== 200 ?
-    error = xhr.statusText :
-    response = xhr.response;
+    const response = xhr.response;
+    const error = xhr.statusText;    
     options.callback(error, response);
   };
 };
